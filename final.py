@@ -165,7 +165,7 @@ plt.figure(figsize=(12, 10))
 corr_features = ['departure_delay', 'load_factor', 'ssr_count', 'transfer_bag_ratio', 'children_count', 'ground_time_pressure', 'scheduled_flight_duration']
 correlation_matrix = df[corr_features].corr()
 sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt=".2f")
-plt.title('Correlation Matrix of Key Flight Features', fontsize=16)
+plt.title('Correlation Matrix of Key Flight Features', fontsize=20)
 plt.tight_layout()
 # plt.savefig('viz_correlation_heatmap.png')
 plt.show()
